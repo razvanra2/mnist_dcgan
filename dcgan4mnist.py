@@ -154,7 +154,7 @@ def main():
     train_dataset = tf.data.Dataset.from_tensor_slices(train_images).shuffle(BUFFER_SIZE).batch(BATCH_SIZE)
 
     print("loading done, will start training...")
-    #train(train_dataset, EPOCHS)
+    train(train_dataset, EPOCHS)
 
     gen_gif_from_output()
 
